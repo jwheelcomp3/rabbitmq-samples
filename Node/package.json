@@ -1,0 +1,11 @@
+{
+  "name": "rabbit-sample",
+  "version": "1.0.0",
+  "description": "Sample of how RabbitMQ can be used from node using the rabbot library.",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "",
+  "license": "ISC"
+}
