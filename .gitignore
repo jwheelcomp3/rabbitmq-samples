@@ -1,3 +1,4 @@
-/C#/RabbitMQExample/bin/*
-/C#/RabbitMQExample/obj/*
-/Node/node_modules/*
+C#/rabbitmq-sample/bin/*
+C#/rabbitmq-sample/obj/*
+C#/rabbitmq-sample/.vs/*
+Node/node_modules/*
