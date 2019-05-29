@@ -1,2 +1,3 @@
 /C#/RabbitMQExample/bin/*
 /C#/RabbitMQExample/obj/*
+/Node/node_modules/*
