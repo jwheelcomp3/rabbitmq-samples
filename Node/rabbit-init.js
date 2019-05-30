@@ -4,9 +4,9 @@ const consumer = require('./consumer')
 
 rabbit.on('connected', () => console.log('RabbitMQ connected'))
 rabbit.on('closed', () => console.log('RabbitMQ closed'))
-rabbit.on('failed', (err) => logger.error('RabbitMQ failed, unintentional close', err))
+rabbit.on('failed', (err) => console.log('RabbitMQ failed, unintentional close', err))
 rabbit.on('unreachable', () => {
-    logger.fatal('RabbitMQ is unreachable, so we will crash')
+    console.log('RabbitMQ is unreachable, so we will crash')
     process.exit(66)
 })
 
