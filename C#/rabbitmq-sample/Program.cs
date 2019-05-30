@@ -1,5 +1,5 @@
 ﻿using System;
-using RabbitMQ.Net;
+using RabbitMQ.Client;
 
 namespace rabbitmq_sample
 {
@@ -20,3 +20,10 @@ namespace rabbitmq_sample
         }
     }
 }
+
+/*
+ * 
+Publish email-address.submitted to 'rabbitmq-node-sample.registration.events'
+Consume ser.created from 'rabbitmq-csharp-sample.user.events'
+ * 
+ * */
