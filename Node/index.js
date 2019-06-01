@@ -9,8 +9,8 @@ async function run() {
     })
 
     readline.on('line', async () => {
-        await publisher()
-        console.log("Event published")
+        var id = await publisher()
+        console.log("Event published: " + id)
     })
 }
 
