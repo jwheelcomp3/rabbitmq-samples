@@ -8,8 +8,9 @@ async function run() {
         output: process.stdout
     })
 
-    readline.on('line', () => {
-        publisher()
+    readline.on('line', async () => {
+        await publisher()
+        console.log("Event published")
     })
 }
 

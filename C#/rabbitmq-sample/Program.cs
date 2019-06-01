@@ -24,13 +24,13 @@ namespace rabbitmq_sample
                     SetUpTopology(model);
                     Console.WriteLine("Topology verified");
 
-                    var consumer = new EventingBasicConsumer(model);
-                    consumer.Received += (ch, ea) =>
+                    var userCreatedConsumer = new EventingBasicConsumer(model);
+                    userCreatedConsumer.Received += (ch, ea) =>
                     {
                         ConsumeUserCreated((EventingBasicConsumer)ch, ea);
                     };
 
-                    model.BasicConsume(WorkQueueName, false, consumer);
+                    model.BasicConsume(WorkQueueName, false, userCreatedConsumer);
                     Console.WriteLine("Consumer set up");
 
                     while (true)

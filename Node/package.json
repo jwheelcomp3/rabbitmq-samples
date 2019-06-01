@@ -7,8 +7,7 @@
     "test": "test",
     "start": "node index.js"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Jared Wheeler",
   "dependencies": {
     "rabbot": "^2.1.0"
   }
